@@ -1,0 +1,9 @@
+<!--pages/del/del.wxml-->
+<view class="body">
+  <view class="touchItem {{item.showDel ? 'touch-move-active' : ''}}" data-index="{{index}}" bindtouchstart="touchstart" bindtouchmove="touchmove" bindtouchend="touchend" wx:for="{{test}}" wx:key="">
+    <view class="contentArea">
+      <text class="title">{{item.title}}</text>
+    </view>
+    <view class="del" catchtap="ignore" data-index="{{index}}">删除</view>
+  </view>
+</view>

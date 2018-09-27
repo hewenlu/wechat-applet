@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/component/del/del",
+    "pages/component/yanzhengma/yanzhengma",
+    "pages/component/xuanfuqiu/xuanfuqiu"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#7474f5",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "徐金琦的自创组件"
+  }
+}

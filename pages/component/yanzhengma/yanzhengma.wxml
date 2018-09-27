@@ -1,0 +1,19 @@
+<!--pages/yanzhengma/yanzhengma.wxml-->
+<view class="btn" bindtap="showSureCode">点击输入验证码</view>
+<!-- 验证码弹窗 -->
+<view class="back" hidden='{{sureCode}}'> 
+  <view class="sureCode">
+    <text class="sureCode-title">输入验证码</text>
+    <view class="inputLine">
+      <view class="inputBlock" bindtap="inputFocus">{{sureCodeNum[0]}}</view>
+      <view class="inputBlock" bindtap="inputFocus">{{sureCodeNum[1]}}</view>
+      <view class="inputBlock" bindtap="inputFocus">{{sureCodeNum[2]}}</view>
+      <view class="inputBlock" bindtap="inputFocus">{{sureCodeNum[3]}}</view>
+      <view class="inputBlock" bindtap="inputFocus">{{sureCodeNum[4]}}</view>
+      <view class="inputBlock" bindtap="inputFocus">{{sureCodeNum[5]}}</view>
+    </view>
+    <text class="cancel" bindtap="cancel">取 消</text>
+    <text class="sure" bindtap="sure">确 认</text>
+  </view>
+  <input class="ainput" type="number" bindinput="input" focus="{{inputFocus}}" maxlength='6'></input>
+</view>

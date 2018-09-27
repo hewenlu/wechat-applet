@@ -1,0 +1,62 @@
+/* pages/del/del.wxss */
+
+page{
+  box-sizing: border-box;
+  padding-top: 20rpx;
+  background:rgba(244,249,255,1);
+  height: 100%;
+  width: 100%;
+}
+.body{
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+}
+.touchItem {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  height: 120rpx;
+  width: 100%;
+  margin-bottom: 20rpx;
+  border-bottom: 1px solid #eee;
+  overflow-x: hidden;
+  background-color: white;
+}
+.contentArea {
+  width: 100%;
+  padding: 10px 20rpx;
+  line-height: 22px;
+  margin-right:0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-transform: translateX(70px);
+  transform: translateX(70px);
+  margin-left: -70px
+}
+.title{
+  font-size: 30rpx;
+  color: #333;
+  display: block;
+  float: left;
+}
+.del {
+  background-color: #FD5454;
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  -webkit-transform: translateX(70px);
+  transform: translateX(70px);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+/* 左滑后的样式 */
+.touch-move-active .contentArea,
+.touch-move-active .del {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}

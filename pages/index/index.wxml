@@ -1,0 +1,12 @@
+<!--pages/index/index.wxml-->
+
+<block wx:for="{{btns}}" wx:key="key">
+  <view class='btn'>
+    <navigator url="{{item.url}}" hover-class="navigator-hover">
+      <view class='btnBody'>
+        <image src='{{item.icon}}' class='btnImg'></image>
+        <text class='btnText'>{{item.title}}</text>
+      </view>
+    </navigator>
+  </view>
+</block>

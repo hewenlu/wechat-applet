@@ -1,0 +1,3 @@
+<!--pages/xuanfuqiu/xuanfuqiu.wxml-->
+<!-- 按钮 -->
+<view class="btn" style="bottom:{{ballBottom}}px;right:{{ballRight}}px;" bindtouchmove="ballMoveEvent" bindtouchend="ballMoveEnd">悬浮</view>
